@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mylove</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Confetti Container -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-animation">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="floating-heart heart-1">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="floating-sparkle sparkle-1">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 7.2L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.8z"/>
+                </svg>
+            </div>
+
+            <div class="badge">✨ A SPECIAL DAY FOR A SPECIAL PERSON ✨</div>
+            
+            <h1 class="hero-title" id="heroTitle">
+                <span class="word" data-word="Mila">
+                    <span class="letter">M</span><span class="letter">i</span><span class="letter">l</span><span class="letter">a</span>
+                </span>
+                <span class="word" data-word="Joy">
+                    <span class="letter">J</span><span class="letter">o</span><span class="letter">y</span>
+                </span>
+                <span class="word" data-word="Romero">
+                    <span class="letter">R</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span><span class="letter">r</span><span class="letter">o</span>
+                </span>
+            </h1>
+
+            <div class="hero-message">
+                <p class="hero-greeting">Happy Birthday, my love! 🎂</p>
+                <p class="hero-subtext">Today, we celebrate the incredible person you are and all the joy you bring into this world.</p>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="love-letter" class="love-letter">
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+        <div class="decorative-dot dot-1"></div>
+        <div class="decorative-dot dot-2"></div>
+
+        <div class="container">
+            <div class="letter-container">
+                <div class="wax-seal">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h2 class="letter-title" id="letterTitle"></h2>
+                <div class="letter-content" id="letterContent"></div>
+                <div class="signature">
+                    <p class="signature-text">Forever yours,
+                        <br>
+                    Wilson Dela Cruz
+                    </p>
+                    <div class="hearts-signature">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="floating-heart-decor left">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <div class="floating-heart-decor right">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why You're Extraordinary</h2>
+                <p class="section-subtitle">Five reasons why you're so special to me💙</p>
+            </div>
+            <div class="manifesto-grid" id="manifestoGrid"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Little Gallery of You</h2>
+                    <p class="section-subtitle">
+                        Because somehow, you make everything beautiful
+                    </p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="\" alt="\">
+            <p id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="timeline-bg">
+            <div class="timeline-blob blob-left"></div>
+            <div class="timeline-blob blob-right"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story, Miles Apart</h2>
+                <p class="section-subtitle">Every moment with you is a treasure</p>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-items" id="timelineItems"></div>
+        </div>
+    </section>
+<!-- Things I Never Told You -->
+<section id="things-never-told" class="things-never-told">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Things I Never Told You</h2>
+            <p class="section-subtitle">
+                Mga simpleng bagay na hindi ko palaging nasasabi pero gusto kong malaman mo. 💙
+            </p>
+        </div>
+
+        <div class="confession-list">
+
+            <div class="confession-card">
+            <span>01</span>
+            <h3>Your Good Morning</h3>
+            <p>
+                Every good morning mo sakin love, i feel loved and valued nagiging kompleto agad
+                yung araw ko. 
+            </p>
+            </div>
+
+            <div class="confession-card">
+                <span>02</span>
+                <h3>I Always Read Our Chats Again</h3>
+                <p>
+                    Kapag nami-miss kita, minsan binabalikan ko mga convo natin HAHHAH
+                    natatawa nga ako minsan kasi parang di naman tayo darating sa point
+                    nato, napapangiti pa rin ako.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>03</span>
+                <h3>You Changed Me</h3>
+                <p>
+                    Simula nung dumating ka, mas naging patient ako, mas naging positive,
+                    at mas naniwala akong may taong worth waiting for.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>04</span>
+                <h3>You're My Safe Place</h3>
+                <p>
+                    Kahit magkalayo tayo, ikaw pa rin yung taong nagpapakalma sa'kin.
+                    Ikaw yung comfort ko kahit nasa kabilang screen lang.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>05</span>
+                <h3>I Love Hearing Your Voice</h3>
+                <p>
+                    Kahit ilang minuto lang tayong mag-usap sa call, sapat na yun sakin minsan,
+                    kahit nga minsan di ka nagsasalita basta makita lang kita ayos nako eh.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>06</span>
+                <h3>You Make Me Smile Without Trying</h3>
+                <p>
+                    Mas nagiging masaya ako kapag kausap na kita kahit minsan lagi mo akong inaasar
+                    pero nagiging masaya ako kasi kausap kita.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>07</span>
+                <h3>I Miss You More Than I Say</h3>
+                <p>
+                    Hindi ko man palaging sinasabi, pero sobrang nami-miss kita araw-araw.
+                    Sana dumating yung panahon na hindi na lang tayo sa screen nagkikita.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>08</span>
+                <h3>I'm Proud of You</h3>
+                <p>
+                    Proud na proud ako sa lahat ng ginagawa mo. Kahit maliit na achievement,
+                    deserve mong ipagmalaki kasi alam kong pinaghihirapan mo lahat.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>09</span>
+                <h3>Thank You for Staying</h3>
+                <p>
+                    Salamat kasi pinili mong manatili kahit may mga araw na mahirap,
+                    kahit may tampuhan at misunderstandings tayo.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>10</span>
+                <h3>I Pray for You</h3>
+                <p>
+                    Isa ka sa mga lagi kong ipinagdadasal. Hinihiling ko kay Lord na lagi
+                    kang maging safe, healthy, at masaya araw-araw.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>11</span>
+                <h3>I Can't Wait to See You</h3>
+                <p>
+                    Iniisip ko pa lang yung araw na magkikita tayo, kinikilig na ako.
+                    Ang dami kong gustong yakap at kiss sayo.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>12</span>
+                <h3>You Inspire Me</h3>
+                <p>
+                    Isa ka sa mga dahilan kung bakit gusto kong maging mas mabuting tao.
+                    Gusto kong maging version ng sarili ko na deserve ka.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>13</span>
+                <h3>Thank You for Loving Me</h3>
+                <p>
+                    Salamat sa pagmamahal mo kahit hindi ako perfect. Tinanggap mo ako
+                    kasama lahat ng flaws at imperfections ko.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>14</span>
+                <h3>My Favorite Notification</h3>
+                <p>
+                    Hindi ko maipaliwanag, pero kapag pangalan mo yung lumalabas sa
+                    notification ko, ikaw lang din yung hinihintay kong notification sa phone ko love.
+                </p>
+            </div>
+
+            <div class="confession-card">
+                <span>15</span>
+                <h3>I Choose You, Every Single Day</h3>
+                <p>
+                    At the end of the day, ikaw pa rin ang pipiliin ko. Kahit may distance,
+                    kahit may challenges, ikaw pa rin ang gusto kong makasama hanggang
+                    sa lahat ng susunod na birthdays at habang buhay. 💙
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Video Message Section -->
+<section id="video-message" class="video-message">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">A Message From Me 💙</h2>
+            <p class="section-subtitle">
+                Kahit magkalayo tayo, sana maramdaman mong kasama mo ako sa espesyal na araw mo.
+            </p>
+        </div>
+
+        <div class="video-container">
+
+            <video
+                id="birthdayVideo"
+                controls
+                preload="metadata"
+                poster="images/video-thumbnail.jpg"
+                width="100%">
+
+                <source src="video/birthday-message.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+        <div class="video-note">
+
+            <h3>💌 A Little Note</h3>
+
+            <p>
+                Happy Birthday, my love.
+                Hindi man ako nasa tabi mo ngayon,
+                gusto kong malaman mo na ikaw ang pinaka-special
+                na taong dumating sa buhay ko.
+            </p>
+
+            <p>
+                Sana sa simpleng video na ito,
+                maramdaman mong kasama mo ako habang
+                cine-celebrate mo ang birthday mo.
+            </p>
+
+            <p>
+                I love you so much.
+                Enjoy your day, baby. 💙
+            </p>
+
+            <span>— Wilson</span>
+
+        </div>
+
+    </div>
+</section>
+<section id="if-i-were-there" class="if-i-were-there">
+
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">If I Were With You Today</h2>
+            <p class="section-subtitle">
+                Ito sana ang gagawin ko kung kasama kita ngayong birthday mo.
+            </p>
+        </div>
+
+        <div class="dream-card">
+
+            <p>
+                Una yayakapin kita.
+            </p>
+
+            <p>
+                Tapos kakantahan kita ng Happy Birthday. 
+            </p>
+
+            <p>
+                Bibigyan kita ng flowers, cake,
+                at ikukuha kita ng maraming pictures hanggang sabihin mong
+                "Tama na!" 
+            </p>
+
+            <p>
+                Tapos i kikiss kita ng marami tapos i hug ulit kita.
+            </p>
+
+            <p>
+                At bago matapos ang araw,
+                sasabihin ko ulit...
+            </p>
+
+            <h2>
+                Happy Birthday, my love.
+                Thank you for existing. 💙
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-blob blob-1"></div>
+            <div class="footer-blob blob-2"></div>
+        </div>
+
+        <div class="container footer-content">
+            <div class="footer-icons">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 7.2L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.8z"/>
+                </svg>
+            </div>
+            <h3 class="footer-title">Happy Birthday, MyLove! 🎉</h3>
+            <p class="footer-message">Happy Birthday, my love. Sana dumating yung panahon na hindi na lang tayo magce-celebrate sa video call kundi magkasama na tayo. Hanggang sa araw na mahawakan kita, hinding-hindi ako magsasawang piliin ka araw-araw. I love you always. 💙</p>
+            <div class="footer-divider"></div>
+            <p class="footer-credit">Made with your Boyfriend <a href="https://www.facebook.com/wilson.dela.cruz.933262/">Wilson Dela Cruz</a></p>
+            <p class="footer-copyright">© <span id="currentYear"></span> - A day to celebrate you</p>
+
+            <div class="floating-hearts-footer" id="floatingHeartsFooter"></div>
+        </div>
+    </footer>
+
+    <!-- Music Player -->
+    <div id="musicPlayer" class="music-player">
+        <button class="play-pause-btn" id="playPauseBtn">
+            <svg id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg id="pauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: none;">
+                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+            </svg>
+        </button>
+        <div class="player-info">
+            <p class="song-title">Birthday Song</p>
+            <p class="song-status">Click to play</p>
+        </div>
+        <button class="mute-btn" id="muteBtn">
+            <svg id="volumeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <svg id="muteIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+        </button>
+        <button class="close-btn" id="closePlayerBtn">×</button>
+        <div class="sound-waves" id="soundWaves" style="display: none;">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" loop>
+        <source src="Happy Birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="mockdata.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
